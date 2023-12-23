@@ -1,0 +1,65 @@
+/* CSS reset / defaults - taken from https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list style from lists with css classes */
+ul[class],
+ol[class] {
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+}
+
+/* Make underline more readable for unstyled links (set explicitely for own styles) */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Fluid image style. Images should behave like blocks by default */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Reset font settings on input elements */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+
+/* Add margin-top of one line-height to all flow elements that have a preceding sibling */
+.flow > * + * {
+    margin-top: 1.5em;
+}
