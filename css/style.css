@@ -73,7 +73,7 @@ select {
     --light-blue: #3882f6;
     --light-grey: #e5e7eb;
     --off-white: #f9faf8;
-    --placeholder-grey: #eee;
+    --placeholder-grey: #6c737c;
     
     --header-bg: var(--dark-blue);
     --header-col: var(--off-white);
@@ -101,20 +101,6 @@ body {
 .header-nav-row .logo {
     font-size: 24px;
     color: var(--header-col);
-}
-
-.hero .main-text {
-    font-size: 48px;
-    font-weight: bolder;
-}
-
-.hero .secondary-text {
-    font-size: 18px;
-    color: var(--hero-secondary-col);
-}
-
-.button {
-    color: var(--button);
 }
 
 .cta {
@@ -145,13 +131,13 @@ header {
 }
 
 section.hero {
-    width: 50em;
+    width: 60em;
     margin: 0 auto;
 }
 
 main {
     flex: 1;
-    width: 50em;
+    width: 60em;
     margin: 0 auto;
 }
 
@@ -165,7 +151,7 @@ footer.site-footer {
 }
 
 .header-nav-row {
-    width: 50em;
+    width: 60em;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
@@ -195,5 +181,54 @@ footer.site-footer {
 .header-nav-row .main-nav a:hover {
     background: var(--header-col);
     color: var(--header-bg);
+}
+
+.hero {
+    display: flex;
+    height: 30em;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero .hero-callout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 256px;
+    gap: 12px;
+}
+
+.hero .hero-callout p {
+    font-size: 18px;
+    color: var(--hero-secondary-col);
+}
+
+.hero .hero-callout button {
+    background-color: var(--button-bg);
+    color: var(--button-col);
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 8px 32px;
+    border-radius: 8px;
+    border: none;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+.hero .placeholder-image {
+    width: 512px;
+    height: 256px;
+    background: var(--placeholder-bg);
+    color: var(--placeholder-col);
+    flex: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
