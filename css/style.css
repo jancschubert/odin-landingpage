@@ -111,11 +111,6 @@ body {
     background-color: var(--cta-bg);
 }
 
-.quote {
-    background-color: var(--quote-bg);
-    color: var(--quote-col);
-}
-
 /* layout section */
 
 body {
@@ -135,8 +130,10 @@ section.hero {
 
 main {
     flex: 1;
-    width: 60em;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer.site-footer {
@@ -237,11 +234,16 @@ footer.site-footer {
 
 .info-section {
     height: 30em;
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-section h2 {
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: 900;
     color: var(--info-header-col);
     height: 3em;
     display: flex;
@@ -273,4 +275,35 @@ footer.site-footer {
 .illustration-container p {
     text-align: center;
     color: var(--info-text-col);
+}
+
+.testimonial {
+    height: 30em;
+    width: 100%;
+    background: var(--quote-bg);
+    color: var(--quote-col);
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial blockquote {
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial blockquote p {
+    font-family: Helvetica, "Arial Narrow", Arial, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.testimonial blockquote footer {
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
 }
