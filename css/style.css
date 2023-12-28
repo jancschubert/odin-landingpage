@@ -70,6 +70,7 @@ select {
 
     /* colors */
     --dark-blue: #1f2937;
+    --highlight-blue: #529cff;
     --light-blue: #3882f6;
     --light-grey: #e5e7eb;
     --off-white: #f9faf8;
@@ -83,6 +84,7 @@ select {
     --footer-col: --light-grey;
     --button-bg: var(--light-blue);
     --button-col: var(--off-white);
+    --button-highlight-bg: var(--highlight-blue);
     --cta-bg: var(--light-blue);
     --cta-col: var(--off-white);
     --info-header-col: var(--dark-blue);
@@ -215,6 +217,11 @@ footer.site-footer {
     border: none;
 }
 
+.hero .hero-callout button:hover {
+    background-color:  var(--button-highlight-bg);
+}
+
+
 .hero h2 {
     font-size: 48px;
     font-weight: bolder;
@@ -231,4 +238,3 @@ footer.site-footer {
     justify-content: center;
     align-items: center;
 }
-
