@@ -75,6 +75,7 @@ select {
     --light-grey: #e5e7eb;
     --off-white: #f9faf8;
     --placeholder-grey: #6c737c;
+    --blue-grey: #4b5563;
     
     --header-bg: var(--dark-blue);
     --header-col: var(--off-white);
@@ -88,6 +89,7 @@ select {
     --cta-bg: var(--light-blue);
     --cta-col: var(--off-white);
     --info-header-col: var(--dark-blue);
+    --info-text-col: var(--blue-grey);
     --quote-bg: var(--light-grey);
     --quote-col: var(--dark-blue);
     --footer-bg: var(--dark-blue);
@@ -107,12 +109,6 @@ body {
 
 .cta {
     background-color: var(--cta-bg);
-}
-
-.info .header-text {
-    font-size: 36px;
-    font-weight: bolder;
-    color: var(--info-header-col);
 }
 
 .quote {
@@ -237,4 +233,44 @@ footer.site-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.info-section {
+    height: 30em;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--info-header-col);
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.illustration-container {
+    flex: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 168px;
+}
+
+.illustration-container .illustration {
+    width: 168px;
+    height: 168px;
+    border: 4px solid var(--button-bg);
+    border-radius: 16px;
+}
+
+.illustration-container p {
+    text-align: center;
+    color: var(--info-text-col);
 }
